@@ -1,0 +1,5 @@
+<p>Posts</p>
+
+<div *ngFor="let post of posts">
+  <a [routerLink]="['/posts', post.id]" target="_blank">{{ post.title }}</a>
+</div>

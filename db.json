@@ -1,0 +1,120 @@
+{
+  "posts": [
+    {
+      "title": "My title 1",
+      "description": "Cool description numbeer 1",
+      "author": "Teodor Proca",
+      "id": 1
+    },
+    {
+      "title": "Common title 16",
+      "description": "Common description for a comment",
+      "author": "Teo",
+      "id": 2
+    },
+    {
+      "title": "My title 1",
+      "description": "My task for management",
+      "author": "Adelina Hobeanu",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "title": "Comment title 1",
+      "description": "Common description for a comment",
+      "postId": "2",
+      "id": 1
+    },
+    {
+      "title": "Comment title 2",
+      "description": "Common description for a comment",
+      "postId": "2",
+      "id": 2
+    },
+    {
+      "title": "Comment title 3",
+      "description": "Common description for a comment",
+      "postId": "2",
+      "id": 3
+    },
+    {
+      "title": "Comment title 4",
+      "description": "Common description for a comment",
+      "postId": "2",
+      "id": 4
+    },
+    {
+      "title": "Comment title 5",
+      "description": "Common description for a comment",
+      "postId": "2",
+      "id": 5
+    },
+    {
+      "title": "Comment title 6",
+      "description": "Common description for a comment",
+      "postId": "2",
+      "id": 6
+    },
+    {
+      "title": "Comment title 7",
+      "description": "Common description for a comment",
+      "postId": "2",
+      "id": 7
+    },
+    {
+      "title": "Comment title 8",
+      "description": "Common description for a comment",
+      "postId": "2",
+      "id": 8
+    },
+    {
+      "title": "Comment title 9",
+      "description": "Common description for a comment",
+      "postId": "2",
+      "id": 9
+    },
+    {
+      "title": "Comment title 10",
+      "description": "Common description for a comment",
+      "postId": "2",
+      "id": 10
+    },
+    {
+      "title": "Comment title 11",
+      "description": "Common description for a comment",
+      "postId": "2",
+      "id": 11
+    },
+    {
+      "title": "Comment title 12",
+      "description": "Common description for a comment",
+      "postId": "2",
+      "id": 12
+    },
+    {
+      "title": "Comment title 13",
+      "description": "Common description for a comment",
+      "postId": "2",
+      "id": 13
+    },
+    {
+      "title": "Comment title 14",
+      "description": "Common description for a comment",
+      "postId": "2",
+      "id": 14
+    },
+    {
+      "title": "Comment title 15",
+      "description": "Common description for a comment",
+      "postId": "2",
+      "id": 15
+    },
+    {
+      "title": "Comment title 16",
+      "description": "Common description for a comment",
+      "postId": "2",
+      "id": 16
+    }
+  ]
+}

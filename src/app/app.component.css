@@ -1,0 +1,25 @@
+#app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+  'header'
+  'body'
+  'footer';
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  position: fixed;
+  background-color: red;
+  width: 100%;
+}
+
+.body {
+  padding-top: 50px;
+  grid-area: body;
+}
+
+.footer {
+  grid-area: footer;
+}

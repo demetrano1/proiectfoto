@@ -1,0 +1,8 @@
+<p>{{ post?.title }}</p>
+<p>{{ post?.description }}</p>
+
+<p>Comments</p>
+
+<div *ngFor="let comment of comments">
+  {{ comment.title }}
+</div>
