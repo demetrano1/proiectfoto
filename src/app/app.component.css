@@ -10,13 +10,11 @@
 
 .header {
   grid-area: header;
-  position: fixed;
-  background-color: red;
+  /* position: fixed; */
   width: 100%;
 }
 
 .body {
-  padding-top: 50px;
   grid-area: body;
 }
 

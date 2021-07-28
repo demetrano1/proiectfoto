@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Category, PhotoService } from '../photo.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  public categories: Category[] = [];
 
+  constructor(private PhotoService: PhotoService) { }
   ngOnInit(): void {
+    this.PhotoService.getCategories().subscribe((allCategories: Category[]) => {
+      this.categories = allCategories;
+    });
   }
 
 }

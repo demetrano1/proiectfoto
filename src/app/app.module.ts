@@ -8,8 +8,11 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { PostsComponent } from './posts/posts.component';
-import { PostDetailsComponent } from './post-details/post-details.component';
+import { CategoriesComponent } from './categories/categories.component';
+import { CategoryDetailsComponent } from './category-details/category-details.component';
+import { StickyNavModule } from 'ng2-sticky-nav';
+
+
 
 @NgModule({
   declarations: [
@@ -17,15 +20,16 @@ import { PostDetailsComponent } from './post-details/post-details.component';
     HeaderComponent,
     FooterComponent,
     DashboardComponent,
-    PostsComponent,
-    PostDetailsComponent
+    CategoriesComponent,
+    CategoryDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    StickyNavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

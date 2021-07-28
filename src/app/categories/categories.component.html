@@ -1,0 +1,42 @@
+<div class="page">
+
+  <div class="categories-bg">
+    <h1>Categorii</h1>
+  </div>
+
+
+  <div class="category-list">
+
+    <div *ngFor="let category of categories">
+      <a [routerLink]="['/categories', category.id]" target="_blank">{{ category.title }}</a>
+    </div>
+  </div>
+
+  <form class="category-form" [formGroup]="categoryForm" (ngSubmit)="onSubmit()">
+
+    <div class="field">
+      <label for="title">
+        Nume categorie
+      </label>
+      <input id="title" type="text" formControlName="title">
+    </div>
+
+    <div class="field">
+      <label for="description">
+        Descriere
+      </label>
+      <input id="description" type="text" formControlName="description">
+    </div>
+
+    <div class="field">
+      <label for="author">
+        Autor
+      </label>
+      <input id="author" type="text" formControlName="author">
+    </div>
+
+    <button class="button" type="submit">Creaza categorie</button>
+
+  </form>
+
+</div>

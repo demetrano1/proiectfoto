@@ -1,0 +1,143 @@
+.dashboard-list-photo {
+    width: calc(100% - 450px);
+    /* border-radius: 30px; */
+    max-width: 100%;
+}
+
+.landing-bg {
+    background-image: url('/assets/landing.jpeg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.dashboard-filters {
+    z-index: 2;
+    position: sticky;
+    top: 55px;
+    box-shadow: 1px 1px 3px #aaa;
+    padding: 30px;
+    background: white;
+}
+
+.container {
+    /* width: 80%; */
+    /* max-width: 1440px; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+}
+
+.dashboard-presentation {
+    display: flex;
+    position: relative;
+}
+
+.dashboard-left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.dashboard-photos {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-filters li {
+    color: #aaa;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.dashboard-filters div {
+    margin-bottom: 20px;
+}
+
+.dashboard-filters li.selected {
+    color: black;
+}
+
+.photo-presentation {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-wrapper {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.photo-wrapper .photo-presentation {
+    margin: 40px;
+    width: calc(100% - 100px);
+}
+
+.photo-wrapper .dashboard-list-background {
+    display: none;
+}
+
+.dashboard-list-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo-wrapper:nth-child(even) .photo-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.photo-wrapper:nth-child(even) {
+    height: 600px;
+}
+
+.photo-wrapper:nth-child(even) .dashboard-list-background {
+    display: block;
+}
+
+.photo-info {
+    max-width: 400px;
+
+}
+
+.photo-info h2 {
+    color: #88744a;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.photo-wrapper:nth-child(even) .photo-info {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 600px;
+    margin-left: 250px;
+    color: white;
+}
+
+.photo-wrapper:nth-child(even) .photo-info h2 {
+    color: white;
+}
+
+.photo-wrapper:nth-child(even) img {
+    display: none;
+}
+
+.dashboard-presentation {
+    min-height: 100vh;
+}

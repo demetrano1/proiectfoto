@@ -2,18 +2,18 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { PostDetailsComponent } from './post-details/post-details.component';
-import { PostsComponent } from './posts/posts.component';
+import { CategoryDetailsComponent } from './category-details/category-details.component';
+import { CategoriesComponent } from './categories/categories.component';
 
 const routes: Routes = [{
   path: '',
   component: DashboardComponent
 }, {
-  path: 'posts',
-  component: PostsComponent
+  path: 'categories',
+  component: CategoriesComponent
 }, {
-  path: 'posts/:postId',
-  component: PostDetailsComponent
+  path: 'categories/:categoryId',
+  component: CategoryDetailsComponent
 }];
 
 @NgModule({

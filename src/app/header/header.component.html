@@ -1,1 +1,18 @@
-<p>header works!</p>
+
+<div class="sticky-nav-wrapper">
+    <nav class="sticky-nav" stickyClass="is-sticky" ngStickyNav>
+        <div class="logo-wrapper">
+
+            <a routerLink="/" class="logo">
+                Proiect Foto
+            </a>
+        </div>
+        <div class="menu">
+
+            <a routerLink="/categories" target="_blank"> Categorii:     </a>
+            <a *ngFor="let category of categories" [routerLink]="['/categories', category.id]" target="_blank">{{ category.title }}</a>
+        </div>
+        <div class="empty-spacing"></div>
+    </nav>
+  </div>
+  

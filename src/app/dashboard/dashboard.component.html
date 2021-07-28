@@ -1,1 +1,47 @@
-<p>dashboard works!</p>
+<div class="home">
+    <div class="landing-bg">
+
+    </div>
+
+    <div class="container">
+        <div class="dashboard-presentation">
+            <!-- <div class="dashboard-left">
+                <ul class="dashboard-filters">
+                    <div>
+                        Filtrare categorii
+                    </div>
+                    <li *ngFor="let category of categories" (click)="onClickCategory(category.id)"  
+                    
+                    [ngClass]="{'selected':selectedCategories.includes(category.id)}"
+
+                    >
+                        {{ category.title }} 
+                    </li>
+                </ul>
+            </div> -->
+
+            <div class="dashboard-photos">
+
+                <div class="photo-wrapper" *ngFor="let photo of photos">
+                    <div class="photo-presentation" *ngIf="selectedCategories.includes(photo.categoryId)">
+                        <div class="photo-info">
+                            <h2>
+
+                                {{ photo.title }}
+                            </h2>
+                            <p>
+                                {{photo.description}}
+                            </p>
+                        </div>
+                        <img class="dashboard-list-photo" [src]="photo.link ? photo.link : photo.photo">
+                        <div *ngIf="!photo.link && photo.photo" class="dashboard-list-background"
+                            [style.backgroundImage]="'url(' +  photo.photo + ')'"></div>
+                        <div *ngIf="!photo.photo && photo.link" class="dashboard-list-background"
+                            [style.backgroundImage]="'url(' +  photo.link + ')'"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
